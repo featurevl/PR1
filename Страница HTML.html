@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-widht, initial-scale=1.0">
-        <title>Страница с CSS</title>
+        <title>Интерактивная страница</title>
         <style>
             body {
                 font-family: Arial, sans-serif;
@@ -16,10 +16,25 @@
             p {
                 font-size: 1.2em;
             }
+            button {
+                padding: 10px 20px;
+                font-size: 1em;
+                color: #f0f0f0;
+                background-color: #007BFF;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
         </style>
     </head>
     <body>
         <h1>Привет, мир!</h1>
-        <p>Это приер HTML-страницы с CSS-стилизацией</p>
+        <p>Это приер HTML-страницы с CSS-стилизацией и JavaScript</p>
+        <button onclick="showAlert()">Нажми меня</button>
+        <script>
+            function showAlert() {
+                alert('Кнопка нажата!');
+            }
+        </script>
     </body>
 </html>
