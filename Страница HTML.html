@@ -4,37 +4,21 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-widht, initial-scale=1.0">
         <title>Интерактивная страница</title>
-        <style>
-            body {
-                font-family: Arial, sans-serif;
-                background-color: #f0f0f0;
-                color: #333;
-            }
-            h1 {
-                color: #007BFF;
-            }
-            p {
-                font-size: 1.2em;
-            }
-            button {
-                padding: 10px 20px;
-                font-size: 1em;
-                color: #f0f0f0;
-                background-color: #007BFF;
-                border: none;
-                border-radius: 5px;
-                cursor: pointer;
-            }
-        </style>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     </head>
     <body>
-        <h1>Привет, мир!</h1>
-        <p>Это приер HTML-страницы с CSS-стилизацией и JavaScript</p>
-        <button onclick="showAlert()">Нажми меня</button>
+        <div class="container">
+            <h1 class="text-primary">Привет, мир!</h1>
+            <p class="lead">Это пример HTML-сстраницы с использованием Bootstrap</p>
+            <button class="btn btn-primary" onclick="showAlert()">Нажми меня</button>
+        </div>
         <script>
             function showAlert() {
                 alert('Кнопка нажата!');
             }
         </script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     </body>
 </html>
